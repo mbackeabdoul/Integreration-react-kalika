@@ -8,7 +8,7 @@ const Cart = () => {
         <h2 style={styles.title}>Panier</h2>
         <p style={styles.item}>1 plante - 24€</p>
         <p style={styles.total}>Total: 24€</p>
-        <button style={styles.button}>Valider le panier</button> {/* Ajout du style directement au bouton */}
+        <button style={styles.button}>Valider le panier</button> 
       </div>
     </aside>
   );

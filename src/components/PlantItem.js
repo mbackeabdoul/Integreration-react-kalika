@@ -1,24 +1,21 @@
 import React from 'react';
 import { FaSun, FaSeedling } from 'react-icons/fa';
+import CareScale from './CareScale';
 
-const PlantItem = ({ name, price, image, borderColor }) => {
+const PlantItem = (props) => {
   return (
-    <div style={{ ...styles.card, borderColor: borderColor || 'green' }}>
+    <div style={{ ...styles.card, borderColor: props.borderColor || 'green' }}>
       <div style={styles.imageContainer}>
-        <img src={require(`./images/${image}`)} alt={name} style={styles.image} />
-        <span style={styles.price}>{price}€</span>
+        <img src={require(`./images/${props.image}`)} alt={props.name} style={styles.image} />
+        <span style={styles.price}>{props.price}€</span>
       </div>
       <div style={styles.contentContainer}>
-        <h5 style={styles.name}>{name}</h5>
+        <h5 style={styles.name}>{props.name}</h5>
         <div style={styles.icons}>
-          <FaSun style={styles.icon} />
-          <FaSun style={styles.icon} />
-          <FaSun style={styles.icon} />
+       <CareScale info=<FaSun style={styles.icon} />/>
         </div>
         <div style={styles.icons}>
-          <FaSeedling style={styles.iconFlower} />
-          <FaSeedling style={styles.iconFlower} />
-          <FaSeedling style={styles.iconFlower} />
+          <CareScale info=<FaSeedling style={styles.iconFlower} /> />
         </div>
         <button style={styles.button}>Ajouter</button>
       </div>

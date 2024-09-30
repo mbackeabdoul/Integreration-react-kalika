@@ -1,13 +1,9 @@
 import React from 'react';
-
-const CareScale = ({ scale }) => {
-  const scales = Array(scale).fill('🌿');
+const CareScale = (props) => {
 
   return (
     <div>
-      {scales.map((leaf, index) => (
-        <span key={index}>{leaf}</span>
-      ))}
+      {props.info} {props.info} {props.info}
     </div>
   );
 };

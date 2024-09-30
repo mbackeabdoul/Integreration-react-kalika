@@ -1,7 +1,8 @@
 import React from 'react';
 import PlantItem from './PlantItem';
 
-const ShoppingList = ({ plants }) => {
+const ShoppingList = (props) => {
+  let plants = props.plants;
   return (
     <div className="d-flex justify-content-between">
       {plants.map((plant, index) => (

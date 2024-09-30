@@ -1,5 +1,4 @@
 import React from 'react';
-
 const Categories = () => {
   return (
     <div style={styles.container}>
@@ -8,7 +7,6 @@ const Categories = () => {
         <option value="indoor">Plantes d'intérieur</option>
         <option value="outdoor">Plantes d'extérieur</option>
       </select>
-      
       <button type="button" style={styles.button}>Réinitialiser</button>
     </div>
   );
